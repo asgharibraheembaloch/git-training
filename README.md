@@ -2,7 +2,7 @@
 
 this repo contain code and files created in order to learn git basics
 
-## Link to Tutorial
+## Link to Tutorial 
 
 video link is https://www.youtube.com/watch?v=RGOj5yH7evk
 
@@ -12,6 +12,10 @@ video link is https://www.youtube.com/watch?v=RGOj5yH7evk
 >> `mkdir folder_name`
 - #### naviagte into directory
 >> `cd`
+- #### initialize git within empty folder
+>> `git init`
+- #### cloning repo from github
+>> `git clone https://github.com/asgharibraheembaloch/git-training.git`
 - #### to check status on changes within files and folder in current directory
 >> `git status`
 - #### to track all files inside folder
