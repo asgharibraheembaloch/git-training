@@ -28,10 +28,10 @@ video link is https://www.youtube.com/watch?v=RGOj5yH7evk
 >> `git push oringin main`
 
 - ### to publish local repo to github
-first make local folder and then within this folder run following commands
+> first make local folder and then within this folder run following commands
 >> - `` `git init` will initilize git repo within folder``
 >> - `` `git status` will check status of changes within folder``
-make remote repo on github and then add conect it with your local repo
+> make remote repo on github and then add conect it with your local repo
 >> - `` `git remote add origin https://github.com/asgharibraheembaloch/remote-repo.git` will make connection with local and remote repos``
 >> - `` `git remote -v` will check any remote repository connected with local repo``
 >> - `` `git push origin main` will push code from local repo into remote repo``
