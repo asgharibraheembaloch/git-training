@@ -44,5 +44,5 @@ video link is https://www.youtube.com/watch?v=RGOj5yH7evk
 >> - ```git branch` to check on which branch you currently``
 >> - ```git branch -c feature-readme-instructions` will create new branch based on main branch -b stands here for to instruct create a new branch``
 >> - ```git branch` will list all branch on your repo * sign indicate that you are on this branch currently on terminal ``
->> ```git checkout main` you will checkout on main branch or switched to main branch now any changes you will make will be reflected on main branch``
+>> - ```git checkout main` you will checkout on main branch or switched to main branch now any changes you will make will be reflected on main branch``
 
