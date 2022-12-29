@@ -22,7 +22,7 @@ video link is https://www.youtube.com/watch?v=RGOj5yH7evk
 >> `git add .`
 - #### to track specific file relative to path
 >> `git add index.html`
-- #### to track changes for your changes
+- #### to commit(or save) those changes
 >> `git commit -m "this placeholder is for message title for what i have changed" -m "this placeholder is for message description"`
 - #### to push local changes to github
 >> `git push oringin main`
