@@ -27,7 +27,7 @@ video link is https://www.youtube.com/watch?v=RGOj5yH7evk
 - #### to push local changes to github
 >> `git push oringin main`
 
-- ### to publish local repo to github
+### to publish local repo to github
 > first make local folder and then within this folder run following commands
 >> - `` `git init` will initilize git repo within folder``
 >> - `` `git status` will check status of changes within folder`` \
