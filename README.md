@@ -77,3 +77,8 @@ OR
 
 ### concept of conflict
 some time there are multiple developer working on same branch and change same code again and again but a conflict arise when git doesn't know which code to keep and which to not beacause there are multiple changes on same line of code at this point you have to manually resolve this conflict
+
+Note: normally workflow is when you create new branch this branch is based on main branch any changes you made within file system are termed into modified when you write command `git status` command at this stage you don't need `git add .`
+you will only run this command when you create new file, so you directly commit with following command with `-a` tag allong with m `-a` here stands for add
+
+`` git commit -am ""` will add and commit at same time but only works for modified files not for newly created files``
