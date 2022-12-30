@@ -116,7 +116,7 @@ then run following command in order to update feature branch with main
 
 `git commit -m "updated index.html and remove marker errors"`
 
-### undoing wrong commit
+### undoing wrong staging before commit
 
 add some line indo index.html
 
@@ -133,3 +133,26 @@ supose if want to undo changes on index.html, then in this scenerio you have to 
 `` `git reset index.html` will unstage index.html for upcomming commit if you did't give file name it will unstage all those privouse stage which you have done with 'git add' ``
 
 at this stage if you do `git commit -am "changes are made to reame only"` only readme changes are commited to repo
+
+### undoing wrong staging after commit
+
+>> - what i have to do when i have done a wrong commit
+
+`` `git reset HEAD~1` will reset your pointer(main branch at this stage) to one commit prvivous in the history, mean on the previous commit``
+
+>> - what i have to do when i have done many wrong commits there is no way you know how many commits you have wrongly made, for this what you do is run following command `git log` this will give entire history of your prevoise commits, then what you will do is pick a commit from history which was stage where you have done correct commits and then choose it's SHA hash code, these commits are in reverse coronlogical order mean latest commit will be on top, then you run following command
+
+`git reset faa43b46e28ebe9d90b4c9be4bab90a94decbc7b`
+
+if you look at your files you will see that changes which you have made are still there
+
+these changes are not saved in git or staged with git no longer, but remember that git still keep track of those changes after this hash, but what if you want completely reset to point in time where you want to keep start your new commits you will run following command
+
+`` `git reset hard faa43b46e28ebe9d90b4c9be4bab90a94decbc7b` will not just unstage changes but will be completly remove till this pointer in head(main branch on which i am)``
+
+now if you look at your files you will see that changes which you have made are completly gone, and you are on point in time where you have not made those changes
+
+
+
+
+
