@@ -57,7 +57,11 @@ OR
 ### concept of deleting feature branch
 feature branch are created in order check or test changes or if updation is required and you don't want that your main branch to affected directly, then you created feature branch, after you satisfy that changes are well enough you merge this feature branch with main branch after merge completed developer don't likely use this feature branch usually then you delete this feature branch.
 
-`` `git branch -d feature-readme-instructions` will delete feature branch``
+`` `git branch -d feature-readme-instructions` will delete feature branch`` \
+
+if you want that this will also be deleted on remote github erver use following command
+
+`git push origin -d feature-readme-instructions`
 
 ### compare two branches locally using dot syntax
 
