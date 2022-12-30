@@ -72,7 +72,7 @@ OR
 
 ### after detail comparision merging on local
 
-```git checkout main` will take head(pointer) on main branch``
+`` `git checkout main` will take head(pointer) on main branch``
 `` `git merge feat_branch` will merge feature_branch into main branch``
 
 ### concept of conflict
@@ -81,4 +81,22 @@ some time there are multiple developer working on same branch and change same co
 Note: normally workflow is when you create new branch this branch is based on main branch any changes you made within file system are termed into modified when you write command `git status` command at this stage you don't need `git add .`
 you will only run this command when you create new file, so you directly commit with following command with `-a` tag allong with m `-a` here stands for add
 
-`` git commit -am ""` will add and commit at same time but only works for modified files not for newly created files``
+`` `git commit -am ""` will add and commit at same time but only works for modified files not for newly created files``
+
+checkout into main branch add new line in index.html and then hit following command \
+`git checkout main`
+
+you will git following error
+
+`git
+error: Your local changes to the following files would be overwritten by checkout:
+        index.html
+Please commit your changes or stash them before you switch branches.
+Aborting
+` \
+at this stage make commit will resolve thi issue \
+
+some time you want to be updated with main branch and need those changes in your feature branch you use following command
+
+`git merge main`
+
