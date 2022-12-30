@@ -118,7 +118,18 @@ then run following command in order to update feature branch with main
 
 ### undoing wrong commit
 
+add some line indo index.html
 
+then run following command
 
+`` `git status` will tell you curent status on changes you made``
 
+`` `git add README` will track changes those changes you made``
 
+`` `git status` run again this command you will see that your changes are committed``
+
+supose if want to undo changes on index.html, then in this scenerio you have to unstage it with following command
+
+`` `git reset index.html` will unstage index.html for upcomming commit if you did't give file name it will unstage all those privouse stage which you have done with 'git add' ``
+
+at this stage if you do `git commit -am "changes are made to reame only"` only readme changes are commited to repo
