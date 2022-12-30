@@ -116,5 +116,9 @@ then run following command in order to update feature branch with main
 
 `git commit -m "updated index.html and remove marker errors"`
 
+### undoing wrong commit
+
+
+
 
 
