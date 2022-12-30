@@ -100,3 +100,17 @@ some time you want to be updated with main branch and need those changes in your
 
 `git merge main`
 
+you may encounter error like this \
+
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+in this case we have to manually remove markers like this \
+
+then run following command in order to update feature branch with main
+
+`git commit -m "updated index.html and remove marker errors"`
+
+
+
