@@ -152,6 +152,27 @@ these changes are not saved in git or staged with git no longer, but remember th
 
 now if you look at your files you will see that changes which you have made are completly gone, and you are on point in time where you have not made those changes
 
+### concept of fork
+what if you want to make sugestion(developer call pr or pull request) on other person or other's repo in this situation what you will do is fork that repo make changes, commit those changes and then send pull request to the owner of the repo if sugestions are well enough owner will merge your code into his own repo other wise reject or make comment to further elaborate on the issue
+
+fork others repo
+
+make changes
+
+commit changes
+
+at this stage changes, which are committed are on my own repo
+
+send a pull request to owner in order merge my changes on his repo branch
+
+>> - go pull request tab and hit 'create pull request' button
+>> - create comparision on my branch on which i have made changes to the owner branch on which i want to send pull request
+
+on screen below i can also check my suggested changes
+
+i can also compare it with my own other branch for which i want to send pull request 
+
+i can also see tags for my pull request which owner set on it's repo in order document feature request which might be encountered as people found suggestion in next comming
 
 
 
