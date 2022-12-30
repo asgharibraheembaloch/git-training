@@ -174,6 +174,10 @@ i can also compare it with my own other branch for which i want to send pull req
 
 i can also see tags for my pull request which owner set on it's repo in order document feature request which might be encountered as people found suggestion in next comming
 
+if i merge the pull request i will changes which i have made on dev branch are also on master branch
+
+
+
 
 
 
