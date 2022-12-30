@@ -98,19 +98,19 @@ error: Your local changes to the following files would be overwritten by checkou
 Please commit your changes or stash them before you switch branches.
 Aborting
 ` \
-at this stage make commit will resolve thi issue \
+at this stage make commit will resolve thi issue 
 
 some time you want to be updated with main branch and need those changes in your feature branch you use following command
 
 `git merge main`
 
-you may encounter error like this \
+you may encounter error like this 
 
 Auto-merging index.html
 CONFLICT (content): Merge conflict in index.html
 Automatic merge failed; fix conflicts and then commit the result.
 
-in this case we have to manually remove markers like this \
+in this case we have to manually remove markers like this 
 
 then run following command in order to update feature branch with main
 
