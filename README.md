@@ -1,5 +1,6 @@
 # Git and Github Demo
 
+
 this repo contain code and files created in order to learn git basics
 
 ## Link to Tutorial 
@@ -157,9 +158,15 @@ what if you want to make sugestion(developer call pr or pull request) on other p
 
 fork others repo
 
+![how to fork](fork.png)
+
 make changes
 
+![make changes](make_changes.png)
+
 commit changes
+
+![make commit](dev_fork.png)
 
 at this stage changes, which are committed are on my own repo
 
@@ -168,16 +175,24 @@ send a pull request to owner in order merge my changes on his repo branch
 >> - go pull request tab and hit 'create pull request' button
 >> - create comparision on my branch on which i have made changes to the owner branch on which i want to send pull request
 
+![create pull request on fork](create_a_pull_req_on_fork.png)
+
+![create pull request on fork](created_pull _req.png)
+
 on screen below i can also check my suggested changes
 
 i can also compare it with my own other branch for which i want to send pull request 
 
+![create pull request on my own branch](my_own_pull_req.png)
+
 i can also see tags for my pull request which owner set on it's repo in order document feature request which might be encountered as people found suggestion in next comming
+
+![create pull request on my own branch](tags_pull_req.png)
 
 if i merge the pull request i will changes which i have made on dev branch are also on master branch
 
+![after merging](committed_changes.png)
 
+![changes on merging](master.png)
 
-
-
-
+![master branch is changed](also_has_changes.png)
