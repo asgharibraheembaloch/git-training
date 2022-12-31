@@ -1,6 +1,5 @@
 # Git and Github Demo
 
-
 this repo contain code and files created in order to learn git basics
 
 ## Link to Tutorial 
@@ -67,8 +66,14 @@ if you want that this will also be deleted on remote github erver use following 
 ### compare two branches locally using dot syntax
 
 ```git diff master..feature` will compare changes within two branches`` \
+
+  ![compare two branching](diff_with_two_dots.png)
+  
 OR
+
 ```git diff master...feature` will compare changes within two branches with common ancestors``
+
+![comapare two branches](diff_with_three_dots.png)
 
 ### Compare commits between two branches
 
@@ -81,10 +86,13 @@ OR
 `` `git merge feat_branch` will merge feature_branch into main branch``
 
 ### concept of conflict
+
 some time there are multiple developer working on same branch and change same code again and again but a conflict arise when git doesn't know which code to keep and which to not beacause there are multiple changes on same line of code at this point you have to manually resolve this conflict
 
 Note: normally workflow is when you create new branch this branch is based on main branch any changes you made within file system are termed into modified when you write command `git status` command at this stage you don't need `git add .`
 you will only run this command when you create new file, so you directly commit with following command with `-a` tag allong with m `-a` here stands for add
+
+![creating a conflict on main](conflict.png)
 
 `` `git commit -am ""` will add and commit at same time but only works for modified files not for newly created files``
 
@@ -92,6 +100,8 @@ checkout into main branch add new line in index.html and then hit following comm
 `git checkout main`
 
 you will git following error
+
+![get conflicting error](conflict2.png)
 
 `git
 error: Your local changes to the following files would be overwritten by checkout:
@@ -105,13 +115,19 @@ some time you want to be updated with main branch and need those changes in your
 
 `git merge main`
 
-you may encounter error like this 
+you may encounter error like this
+
+![conflict on feature branch](conflict3.png)
 
 Auto-merging index.html
 CONFLICT (content): Merge conflict in index.html
 Automatic merge failed; fix conflicts and then commit the result.
 
-in this case we have to manually remove markers like this 
+in this case we have to manually remove markers like this
+
+![removing conflicting marker on feature branch](conflict_marker.png)
+
+![conflicting markers are removed](conflict_marker_removed.png)
 
 then run following command in order to update feature branch with main
 
@@ -119,13 +135,19 @@ then run following command in order to update feature branch with main
 
 ### undoing wrong staging before commit
 
-add some line indo index.html
+add some line into index.html
+
+![make changes on index.html](changes_are_made.png)
 
 then run following command
 
 `` `git status` will tell you curent status on changes you made``
 
+![check status of changes](gitadd.png)
+
 `` `git add README` will track changes those changes you made``
+
+![stage changes on readme.md and index.html](gitadd2.png)
 
 `` `git status` run again this command you will see that your changes are committed``
 
@@ -141,17 +163,23 @@ at this stage if you do `git commit -am "changes are made to reame only"` only r
 
 `` `git reset HEAD~1` will reset your pointer(main branch at this stage) to one commit prvivous in the history, mean on the previous commit``
 
->> - what i have to do when i have done many wrong commits there is no way you know how many commits you have wrongly made, for this what you do is run following command `git log` this will give entire history of your prevoise commits, then what you will do is pick a commit from history which was stage where you have done correct commits and then choose it's SHA hash code, these commits are in reverse coronlogical order mean latest commit will be on top, then you run following command
+>> - what i have to do when i have done many wrong commits there is no way you know how many commits you have wrongly made, for this what you do is run following command `git log` this will give entire history of your prevoise commits, then what you will do is pick a commit from history which was stage where you have done correct commits and then choose it's SHA hash code, these commits are in reverse coronlogical order mean latest commit will be on top, then you run following command!
+
+![copy SHA hash code](choose_sha.png)
 
 `git reset faa43b46e28ebe9d90b4c9be4bab90a94decbc7b`
 
 if you look at your files you will see that changes which you have made are still there
+
+![changes are still seen on index.html](changes_are_still_there.png)
 
 these changes are not saved in git or staged with git no longer, but remember that git still keep track of those changes after this hash, but what if you want completely reset to point in time where you want to keep start your new commits you will run following command
 
 `` `git reset hard faa43b46e28ebe9d90b4c9be4bab90a94decbc7b` will not just unstage changes but will be completly remove till this pointer in head(main branch on which i am)``
 
 now if you look at your files you will see that changes which you have made are completly gone, and you are on point in time where you have not made those changes
+
+![changes have gone](changes_are_gone.png)
 
 ### concept of fork
 what if you want to make sugestion(developer call pr or pull request) on other person or other's repo in this situation what you will do is fork that repo make changes, commit those changes and then send pull request to the owner of the repo if sugestions are well enough owner will merge your code into his own repo other wise reject or make comment to further elaborate on the issue
